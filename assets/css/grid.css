@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+/************************************************************/
+/**********************  Grid System ***********************/
+/***********************************************************/
+
+
+/**********************  Grid System Basic ***********************/
+.grid-container-basic{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    grid-template-columns: repeat( 12, 1fr ); 
+}
+
+
+
+
+
+@media(min-width:1025px)
+{
+    .grid-container-basic{
+        grid-template-columns: repeat( 12, 1fr ); 
+    }
+}
+
+
+
+@media(min-width:769px) and (max-width:1024px)
+{
+    .grid-container-basic{
+        grid-template-columns: repeat( 12, 1fr ); 
+    }
+}
+
+
+
+@media(min-width:569px) and (max-width:768px)
+{
+    .grid-container-basic{
+        grid-template-columns: repeat( 6, 1fr ); 
+    }
+}
+
+
+@media(min-width:469px) and (max-width:568px)
+{
+    .grid-container-basic{
+        grid-template-columns: repeat( 4, 1fr ); 
+    }
+}
+
+
+@media(min-width:321px) and (max-width:468px)
+{
+    .grid-container-basic{
+        grid-template-columns: repeat( 1, 1fr ); 
+    }
+}
+
+@media(max-width:320px)
+{
+    .grid-container-basic{
+        grid-template-columns: repeat( 1, 1fr ); 
+    } 
+}
