@@ -16,7 +16,41 @@
 }
 
 
+/**********************  Grid Area Basic ***********************/
+.grid-container-area {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    grid-template-columns: repeat( 12, 1fr );
+    grid-template-rows: auto;
+}
 
+
+
+/* A class to align all inside of grid item class*/
+.sub-aling{
+    width:100%;
+    justify-items: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+    justify-self: center;
+}
+
+
+
+/**********Example************/
+
+/* it needs to write width 100% & write where it starts and end*/
+.grid-item{
+    grid-column: 2 / 7;
+    background-color: red;
+    width:100%;
+
+}
 
 
 @media(min-width:1025px)
@@ -24,6 +58,11 @@
     .grid-container-basic{
         grid-template-columns: repeat( 12, 1fr ); 
     }
+
+    .grid-container-area {
+        grid-template-columns: repeat( 12, 1fr );
+    }
+
 }
 
 
@@ -32,6 +71,9 @@
 {
     .grid-container-basic{
         grid-template-columns: repeat( 12, 1fr ); 
+    }
+    .grid-container-area {
+        grid-template-columns: repeat( 6, 1fr );
     }
 }
 
@@ -50,6 +92,9 @@
     .grid-container-basic{
         grid-template-columns: repeat( 4, 1fr ); 
     }
+    .grid-container-area {
+        grid-template-columns: repeat( 4, 1fr );
+    }
 }
 
 
@@ -58,11 +103,20 @@
     .grid-container-basic{
         grid-template-columns: repeat( 1, 1fr ); 
     }
+    .grid-container-area {
+        grid-template-columns: repeat( 2, 1fr );
+    }
 }
+
+
 
 @media(max-width:320px)
 {
     .grid-container-basic{
         grid-template-columns: repeat( 1, 1fr ); 
     } 
+
+    .grid-container-area {
+        grid-template-columns: repeat( 1, 1fr );
+    }
 }
